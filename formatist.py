@@ -1,7 +1,8 @@
 import re
 
 
-def translateFormatString(oldFormatString):
+def convert(fmtstr):
+    oldFormatString = fmtstr
     matches = re.finditer(r"(%)(\((?P<name>.*?)\))"
                           r"(?P<flags>[ #0\-\+])?"
                           r"(?P<minimum>(\*|\d*))"

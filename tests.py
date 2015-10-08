@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from formatist import translateFormatString
+import formatist
 
 
 class FormatTranslationTests(TestCase):
@@ -15,7 +15,7 @@ class FormatTranslationTests(TestCase):
         """
         def check(format, **fields):
             self.assertEquals(format % fields,
-                              translateFormatString(format).format(**fields))
+                              formatist.convert(format).format(**fields))
         check("before %(hello)s after", hello='asdf')
         check("%(hello)r between %(number)d", hello='jkl;', number=7)
         check("%(hexify)x", hexify=4321)
