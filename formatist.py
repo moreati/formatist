@@ -6,6 +6,11 @@ A Python library to convert from older `%` style format strings, to newer
 import re
 
 
+__all__ = [
+    'convert',
+]
+
+
 def convert(fmtstr):
     """Convert %-style format specifiers in `fmtstr` to {}-style specifiers
 
