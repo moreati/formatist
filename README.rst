@@ -1,6 +1,9 @@
 formatist
 =========
 
+.. image:: https://travis-ci.org/moreati/formatist.svg?branch=master
+   :target: https://travis-ci.org/moreati/formatist
+
 A Python library to convert from older `%` style format strings, to newer
 `{}` style.
 
