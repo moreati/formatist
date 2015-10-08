@@ -15,5 +15,5 @@ install:
 
 script:
     - python -m doctest README.rst
-    - python -m unittest format_translator
+    - python -m unittest tests
 

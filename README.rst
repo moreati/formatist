@@ -9,7 +9,7 @@ A Python library to convert from older `%` style format strings, to newer
 
 .. code:: python
 
-    >>> from format_translator import translateFormatString
+    >>> from formatist import translateFormatString
     >>> greeting = "Hello %(name)s. It's %(temp).1f C"
     >>> print(greeting % {'name': 'Alice', 'temp': 23.45678})
     Hello Alice. It's 23.5 C

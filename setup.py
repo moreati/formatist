@@ -39,7 +39,7 @@ setup(
     keywords='string format pep3101 percent braces',
 
     py_modules=[
-        'format_translator',
+        'formatist',
     ],
 )
 
