@@ -1,7 +1,17 @@
+"""
+A Python library to convert from older `%` style format strings, to newer
+`{}` style.
+"""
+
 import re
 
 
 def convert(fmtstr):
+    """Convert %-style format specifiers in `fmtstr` to {}-style specifiers
+
+    >>> convert("Hello %(name)s. It's %(temp).1f C")
+    "Hello {name!s:}. It's {temp:>.1f} C"
+    """
     oldFormatString = fmtstr
     matches = re.finditer(r"(%)(\((?P<name>.*?)\))"
                           r"(?P<flags>[ #0\-\+])?"
