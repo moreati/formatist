@@ -11,13 +11,13 @@ def read(fname):
 
 
 setup(
-    name='bracesformat',
+    name='formatist',
     version='0.0.1',
 
     description='Converts %-style format strings to newer {}-style',
     long_description=read('README.rst'),
 
-    url='https://github.com/moreati/bracesformat',
+    url='https://github.com/moreati/formatist',
     author='Glyph',
     author_email='glyph@twistedmatrix.com',
 
@@ -36,7 +36,7 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
     ],
-    keywords='string format pep3101',
+    keywords='string format pep3101 percent braces',
 
     py_modules=[
         'format_translator',

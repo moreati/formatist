@@ -1,5 +1,5 @@
-bracesformat
-============
+formatist
+=========
 
 A Python library to convert from older `%` style format strings, to newer
 `{}` style.
