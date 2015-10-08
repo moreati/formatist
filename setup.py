@@ -12,7 +12,7 @@ def read(fname):
 
 setup(
     name='formatist',
-    version='0.0.1',
+    version='0.0.2',
 
     description='Converts %-style format strings to newer {}-style',
     long_description=read('README.rst'),
